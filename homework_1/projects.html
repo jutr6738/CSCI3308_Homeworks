@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>About Me</title>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <style>
+    .footer{
+        position: fixed; 
+        left:0;
+        bottom:0; 
+        text-align:center;
+        width:100%; 
+        color: white;
+        background-color: grey;
+           }
+    </style>
+</head>
+  
+  <body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
+        <ul class= "navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="mypage_bootstrap.html" style="color:seagreen;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects.html" style="color:seagreen;">Projects </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto" >
+            <a class="nav-item-img" href="https://github.com/jutr6738" style="color: seagreen;">
+                <img src="GitHub-Mark-64px.png"  width="30" height="30" alt="">
+            </a>
+        </ul>
+
+    </nav>
+    
+
+      <!--carousel-->
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="usps.png" alt="Save the USPS Title Page">
+              <div class="carousel-caption">
+                <div class="card"
+                  <h3 class="h3-responsive" style="color:black" >Save the USPS</h3>
+                  <p>An implementation and analysis of C++ linked lists, BST, and graphs to determine the most effective data structure for the USPS to use when storing package information </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="Stop The Bomb.jpg" alt="Bomb Exploding">
+              <div class="carousel-caption">
+                <div class="card"
+                  <h3 class="h3-responsive" style="color:black">Bomb Lab</h3>
+                  <p>The nefarious Dr. Evil has planted a slew of “binary bombs” on our class machines. 
+                      A binary bomb is a program that consists of a sequence of phases where . 
+                        each phase expects you to type a particular string or else "BOOM". 
+                        I inspected the assembly code to discern the secret messages. 
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="p1.jpg" alt="Triangles Code Demo">
+              <div class="carousel-caption">
+                <div class="card"
+                  <h3 class="h3-responsive" style="color:black">Draw Triangles</h3>
+                  <p>The user imputs a number and C++ code generates a triangle made of stars.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      
+    <div class="footer" >
+        <a class="img-fluid" href="https://www.linkedin.com/in/julia-troni-367b521b8/">
+          <img src="linkedin.png" width="40" height="40" alt="Julia's Linkedin">
+        </a>
+    </div>
+
+
+    </body>
+  </html>
