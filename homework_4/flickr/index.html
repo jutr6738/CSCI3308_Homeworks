@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>About Me</title>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+
+    <style>
+    .footer{
+        position: fixed; 
+        left:0;
+        bottom:0; 
+        text-align:center;
+        width:100%; 
+        color: white;
+        background-color: grey;
+           }
+    </style>
+</head>
+  
+  <body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
+      <ul class= "navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="../mypage-bootstrap/mypage_bootstrap.html" style="color:seagreen;">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../mypage-bootstrap/projects.html" style="color:seagreen;">Projects </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../mypage-bootstrap/form.html" style="color:seagreen;"> Form </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../signup-modal/login.html".html" style="color:seagreen;">Sign Up Modal </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../tic-tac-toe/tic-tac-toe.html".html" style="color:seagreen;">Tic Tac Toe Game </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html".html" style="color:seagreen;">Flickr Image Gallery </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto" >
+          <a class="nav-item-img" href="https://github.com/jutr6738" style="color: seagreen;">
+            <img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="Logo" style="width:40px;">
+          </a>
+      </ul>
+
+  </nav>
+
+  <br>
+  <div class="container">
+      <div class="form-row">
+          <div class="col">
+              <select class="form-control" id="num-photos">
+                  <option value="" disabled selected hidden>Number of Photos to Display</option>
+                  <option id="num30" value="30">30</option>
+                  <option id="num50" value="50">50</option>
+                  <option id="num70" value="70">70</option>
+                </select>
+          </div>
+          
+          <div class="col">
+              <input type="text" class="form-control" id="tag_textbox">
+          </div>
+
+          <div class="col">
+              <button type="button" class="btn btn-dark" onclick="makeApiCall(30)">Submit</button>
+          </div>
+          
+      </div>
+
+      <br>
+      <div class="row" id="image-display"></div>
+    </div>
+
+
+  
+
+
+
+  
+
+
+  </body>
+</html>
+
